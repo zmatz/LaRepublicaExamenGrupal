@@ -1,0 +1,58 @@
+@import "../estilosGriss/_variables";
+
+@mixin principal ($width, $height, $fs, $lineh, $botto, $padd, $inse){
+	width: $width;
+	height: $height;
+	h2{
+		color: white;
+		text-shadow:2px 2px 2px #030000;
+		font-size: $fs;	
+		line-height: $lineh;	
+	}
+	.shadow{
+		position: absolute;
+		bottom: $botto;
+		left: 10px;
+		margin:0 16px 0 5px;
+		padding: $padd 10px 0px;
+		-webkit-box-shadow: inset 1px $inse 77px -29px rgba(0,0,0,0.77);
+		-moz-box-shadow: inset 1px $inse 77px -29px rgba(0,0,0,0.77);
+		box-shadow: inset 1px $inse 77px -29px rgba(0,0,0,0.77);
+	}
+	img{
+		z-index: -11111;
+	}
+}
+@mixin grisybtn($color, $borde, $btn){
+	background-color: $color;
+	border-top: 5px solid $borde;
+	.btn{
+		border-radius: 0px !important;
+		border: none !important;
+		margin-top: -20px;
+		font-weight: 600;
+		font-size: 1.5em;
+	}
+	.btn-danger{
+		background-color: $btn !important;
+		background-image: none !important;
+	}
+}
+@mixin news{
+	.notice{
+		border: 1px solid gray;
+	}
+	.head{
+		h3{
+			color: $dark-red;
+			font-weight: 600;
+		}
+	}
+	.center{
+		@include principal (100%, 100%, 1.5em, 1.2, 45px, 40px, -120px);
+	}
+	.foot{
+		color: black;
+		padding: 2%;
+	}
+}

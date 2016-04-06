@@ -1,0 +1,30 @@
+#footer {
+	background-color: #e3e3e3;
+	padding: 20px;
+	a {
+	color: black !important;
+	font-size: 11px;
+	}
+	h3{
+		font-size: 20px;
+	}
+}
+.footer-bottom {
+	margin: 0 auto;
+	li {
+		display: inline-block;
+		border-right: 1px solid gray;
+		padding-right: 5px;
+		font-size: 11px;
+	}
+}
+.footer-sideleft{
+	padding: 115px 25px;
+    border-right: 1px solid whitesmoke;
+	ul {
+		padding-left: 0;
+	}
+	img {
+		margin: 0 auto;
+	}
+}

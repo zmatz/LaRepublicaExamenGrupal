@@ -1,0 +1,134 @@
+/* line 1, ../scss/_footer.scss */
+#footer {
+  background-color: #e3e3e3;
+  padding: 20px;
+}
+/* line 4, ../scss/_footer.scss */
+#footer a {
+  color: black !important;
+  font-size: 11px;
+}
+/* line 8, ../scss/_footer.scss */
+#footer h3 {
+  font-size: 20px;
+}
+
+/* line 12, ../scss/_footer.scss */
+.footer-bottom {
+  margin: 0 auto;
+}
+/* line 14, ../scss/_footer.scss */
+.footer-bottom li {
+  display: inline-block;
+  border-right: 1px solid gray;
+  padding-right: 5px;
+  font-size: 11px;
+}
+
+/* line 21, ../scss/_footer.scss */
+.footer-sideleft {
+  padding: 115px 25px;
+  border-right: 1px solid whitesmoke;
+}
+/* line 24, ../scss/_footer.scss */
+.footer-sideleft ul {
+  padding-left: 0;
+}
+/* line 27, ../scss/_footer.scss */
+.footer-sideleft img {
+  margin: 0 auto;
+}
+
+/* line 3, ../scss/_columnistas.scss */
+.main-title h4 {
+  text-transform: uppercase;
+  color: #e3e3e3;
+}
+
+/* line 9, ../scss/_columnistas.scss */
+.thumb-content, .mini-thumb {
+  padding: 15px;
+  text-align: center;
+}
+
+/* line 14, ../scss/_columnistas.scss */
+.mini-thumb {
+  background-color: #e3e3e3;
+}
+/* line 17, ../scss/_columnistas.scss */
+.mini-thumb img {
+  width: 25%;
+  border: 4px solid #fff;
+  position: relative;
+  float: left;
+  z-index: 2;
+}
+
+/* line 26, ../scss/_columnistas.scss */
+.mini-thumb2 {
+  background-color: #e3e3e3;
+  padding: 5px;
+  text-align: center;
+  margin: 5px 0;
+}
+/* line 31, ../scss/_columnistas.scss */
+.mini-thumb2 a {
+  color: gray;
+}
+/* line 34, ../scss/_columnistas.scss */
+.mini-thumb2 img {
+  width: 25%;
+  border: 4px solid #fff;
+  position: relative;
+  float: left;
+  z-index: 2;
+}
+/* line 41, ../scss/_columnistas.scss */
+.mini-thumb2:hover {
+  background-color: white;
+  border: 1px solid #e3e3e3;
+}
+/* line 44, ../scss/_columnistas.scss */
+.mini-thumb2:hover a {
+  color: black;
+}
+
+/* line 50, ../scss/_columnistas.scss */
+.indice {
+  background-color: #DE1222;
+  padding: 10px 220px;
+  margin: 16px;
+  font-size: 14px;
+}
+/* line 55, ../scss/_columnistas.scss */
+.indice li {
+  display: inline-block;
+}
+/* line 57, ../scss/_columnistas.scss */
+.indice li a {
+  color: white;
+  padding: 5px 14px;
+  border-radius: 15px;
+}
+/* line 61, ../scss/_columnistas.scss */
+.indice li a:hover {
+  background-color: #C11516 !important;
+}
+/* line 64, ../scss/_columnistas.scss */
+.indice li a:active {
+  background-color: #580000;
+}
+
+/* line 71, ../scss/_columnistas.scss */
+.btn-todas {
+  width: 200px;
+  margin: 0 auto;
+  padding: 9px 12px;
+  background-color: #DE1222;
+  font-size: 14px;
+}
+
+/* line 5, main.scss */
+nav {
+  font-size: 10px;
+}

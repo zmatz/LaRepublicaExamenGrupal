@@ -1,0 +1,357 @@
+@import "estilosGriss/_variables";
+@import "estilosGriss/_mixins";
+
+.cien{
+	width: 100%;
+}
+.mt-2{
+		margin-top: 2%;
+}
+.mt-5{
+	margin-top: 5%;
+}
+
+#menu-principal{
+	.navbar{
+		font-size: 12px;
+		min-height: 40px;
+	}
+	.nav{
+		li a{
+			padding: 10px 12px;
+			margin-bottom: -10px;
+			border-right: 1px solid #890505;
+			&:not(:last-child){
+				border-right:none;
+			}
+		}
+	}
+	.navbar-inverse{
+		padding-bottom: 0px;
+		background-image: linear-gradient(to bottom, #E70505 0%, $red 100%);
+		.active a{
+			background-color: #910606 !important;
+			background-image: none;
+		}
+		.dropdown-menu{
+			background-image: linear-gradient(to bottom, #E70505 0%, $red 100%);
+			font-size: 12px;
+			li a{
+				color: white;
+				&:hover{
+					background-color:#E70505 !important;
+				}
+			}
+			.divider{
+				background-color: #680303;
+			}
+		}
+		.navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+			background-color: $dark-red !important;
+		}
+		.dropdown-menu li a:hover {
+	    	background-color: $dark-red !important;
+	    	background-image: none;
+		}
+		.dropdown{
+			&:hover, &:focus, &:active, &:visited{
+				background-color: $dark-red !important;
+			}
+
+		}
+	}
+}
+/*segundo menu*/
+.navbar-brand{
+	background-color: black !important;;
+	color: white !important;
+}
+.menu2	{
+	li{
+		display: inline-block;
+		float: right;
+		color: black;
+		margin:15px 9px 0;
+	}
+}
+#encabezado{
+	h1{
+		font-size: 4.5em;
+		font-weight: 800;
+		color: black;
+		line-height: 1;
+	}
+	.jne{
+		@include principal (100%, auto, auto, auto, 0, 140px, -109px);
+	}
+	.martin{
+		@include principal (100%, auto, auto, auto, 0, 140px, -109px);
+	}
+	.sub{
+		@include principal (100%, auto, auto, auto, 0, 140px, -109px);
+	}
+	ul{
+		margin-left: -35px;
+		li{
+			display: inline-block;
+			padding: 5px;
+			vertical-align: middle;
+		}
+		li a{
+			color: gray;
+			i{
+				font-size: 2em;
+				color: gray;
+			}
+		}
+	}
+}
+#columnistas{
+	margin-top: 2%;
+	.gray{
+			@include grisybtn ($gris, $dark-red, $dark-red);
+	}
+	.bco{
+		background-color: white;
+		padding: 4px;
+	}
+	.pd-5{
+		padding: 3% 3% 1%;
+		a{
+			text-decoration: none;
+		}
+	}
+	.pd-3{
+		padding: 0 2% 4%;
+		color: black;
+		small{
+			font-size: .8em;
+		}
+		p{
+			font-weight: 600;
+			font-size: .9em;
+		}
+	}
+}
+#noticias{
+	.noticia{
+		@include news;
+	}
+	.gray{
+		color: gray;
+	}
+	.inline{
+		display: inline-block;
+	}
+	.txt{
+		font-size: 1.3em;
+	}
+	ul{
+		margin-left: -35px;
+		margin-top: 50px;
+		li{
+			display: inline-block;
+			padding: 5px;
+			vertical-align: middle;
+		}
+		li a{
+			color: gray;
+			i{
+				font-size: 2em;
+				color: gray;
+			}
+		}
+	}
+	hr{
+		border:solid gray 1px;
+	}
+	/*codigo de aside derec ha*/
+	.sideb1{
+		background-image: url(../../assets/image/archive-sidebar-bg.jpg);
+		background-repeat: repeat;
+		padding: 15% 4% 4%;
+		.white{
+			background-color: white;
+			padding:10% 5% 5%;
+			img{
+				position:relative;
+				margin-top:-30%;
+				margin-left: 0%;
+			}
+			input{
+				width: 100%;
+				border-radius: 5px;
+			}
+			.btn{
+				border-radius: 5px !important;
+			}
+			p b{
+				color: $red;
+			}
+			label{
+				text-align: center;
+			/*	display: block;*/
+			}
+			.ancho{
+				width: 80%;
+			}
+			.vocho{
+				margin-top:0% !important;
+			}
+		}
+		p b{
+			color: $red;
+		}
+	}
+	.aweita{
+		padding: 2% 2% 0;
+		border: 1px solid $gris;
+		.logo-a	{
+			padding: 3%;
+		}
+		b{
+			font-size: .9em;
+		}
+		a img{
+			&:hover{
+				border: 5px solid gray;
+			}
+		}
+		p {
+			margin-top: 5%;
+			span{
+				color: #D211B9;
+			}
+		}
+	}
+	.purple{
+		width: 40%;
+		margin: 0 30%;
+		height: 10px;
+		bottom: 0;
+		background-color: #D211B9;
+	}
+	.destacadas{
+		img{
+			border: 2px solid gray;
+		}
+		margin-top: 8%;
+		.gray{
+			@include grisybtn (white,  #5B6BA6,  #5B6BA6);
+			h4{
+				color: black;
+			}
+		}
+		b{
+			color: black;
+		}
+		a img{
+			&:hover{
+				border: 5px solid gray;
+			}
+		}
+	}
+	.especiales{
+		margin-top: 8%;
+		.gray{
+			@include grisybtn (white,  #5B6BA6,  #5B6BA6);
+			img{
+				z-index: -11111;
+			}
+			.white{
+				position: relative;
+				background-color: rgba(255, 255, 255, 0.6);
+				margin: -50px 40px ;
+				padding: 10px;
+				a{
+					color: black;
+				}
+			}
+			.seg{
+				margin-top: 25%;
+			}
+		}
+	}
+	.cari{
+		margin-top: 8%;
+		h4{
+			color: black;
+		}
+		.gray{
+			@include grisybtn (white,  #5B6BA6,  #5B6BA6);
+
+		}
+		h5 b{
+			color: $dark-red;
+		}
+	}
+	.bloguero{
+		margin-top: 8%;
+		h4{
+			color: black;
+		}
+		.gray{
+			@include grisybtn (white,  #5B6BA6,  #5B6BA6);
+
+		}
+		.bco{
+			background-color: white;
+			padding: 5px;
+			box-shadow: 2px 2px 2px $gris;
+		}
+		a small{
+			color: black;
+		}
+		p b {
+			color: black;
+		}
+		a h5 b {
+			color: $dark-red;
+			text-align: center;
+		}
+	}
+	.impresa{
+		margin-top: 8%;
+		h4, h3{
+			color: black;
+		}
+		h4{
+			vertical-align: middle;
+		}
+		a h5 b {
+			color: $dark-red;
+			text-decoration: underline;
+		}
+		.mt-10{
+			margin-top: 15%;
+		}
+		img{
+			border: 1px solid gray;
+		}
+		.gray{
+			@include grisybtn (white,  $dark-red,  $dark-red);
+
+		}
+	}
+	.libero{
+		p .newred{
+			color: $dark-red !important;
+		}
+		.newred2{
+			background-color: $dark-red;
+		}
+		.newred3{
+			background-color: yellow;
+		}
+		.newred4{
+			background-color: #E627B7;
+		}
+	}
+}
+@media screen and (max-width: 600px) {
+	#encabezado{
+		h1{
+			font-size: 2.5em;	
+		}
+	}
+}
